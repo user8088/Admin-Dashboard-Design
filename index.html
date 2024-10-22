@@ -1,0 +1,525 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        JV Dashboard
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR CODE STARTS HERE -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="px-5 navbar-brand" href="#">JV Dashboard<br><h5>Dashboard</h5></a>
+            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-search">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-bell">
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR CODE ENDS HERE -->
+
+    <div class="container-fluid  px-5">
+        <div class="row">
+            <!-- SIDE BAR CODE STARTS HERE -->
+            <div class="col-md-2 sidebar shadow sticky-top mt-3">
+                <div class="mb-4">
+                    <img alt="Logo" class="img-fluid" height="150"
+                        src="images/Vector.png"
+                        width="150" />
+                </div>
+                <nav class="nav flex-column">
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/dashboard-icon.png" height="20" width="20"/>
+                        <span class="ps-3">Dashboard</span>
+                    </a>
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/dhalist-icon.png" height="20" width="20"/>
+                        <span class="ps-3">DHA List</span>
+                    </a>
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/meeting-icon.png" height="20" width="20"/>
+                        <span class="ps-3">Meetings</span> 
+                    </a>
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/firm-icon.png" height="20" width="20"/>
+                        <span class="ps-3">Firms</span>
+                    </a>
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/mou-icon.png" height="20" width="20"/>
+                        <span class="ps-3">MOU</span>
+                    </a>
+                    <div class="section-title pt-3 pb-3">
+                        <h5 class="light-text">Account Management</h5>
+                    </div>
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/property-user-icon.png" height="20" width="20"/>
+                        <span class="ps-3">Manage Property User</span>
+                    </a>
+                    <a class="nav-link p-2" href="#">
+                        <img alt="Logo" class="img-fluid" 
+                        src="images/admin-user-icon.png" height="20" width="20"/>
+                        <span class="ps-3">Manage Admin User</span>
+                    </a>
+                </nav>
+                <div class="mt-4">
+                    <div class="section-title pt-3 pb-3">
+                        <h5 class="light-text">Need Help?</h5>
+                    </div>
+                    <div class="text-center">
+                        <img alt="Help Image" class="img-fluid" height="200"
+                            src="images/question-img.png"
+                            width="200" />
+                    </div>
+                    <p class="small-text text-center">
+                        Check out our dashboard demo or contact our support team.
+                    </p>
+                    <div class="d-flex justify-content-around">
+                        <button class="purple-btn btn btn-primary me-2">
+                            <p class="small-text pt-3" style="color: white;">Contact Support</p>
+                        </button>
+                        <button class="purple-btn-boundary btn btn-secondary">
+                            <p class="small-text pt-3" >Check Demo</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- SIDE BAR CODE ENDS HERE -->
+            <div class="col-md-10 content">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="stats-card shadow">
+                            <div>
+                                <h6 class="light-text">
+                                    Property Listings
+                                </h6>
+                                <h2>
+                                    80
+                                </h2>
+                                <p class="text-success">
+                                    +12 Since Last Week
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img alt="Logo" class="img-fluid" 
+                                src="images/listing-icon.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-card shadow">
+                            <div>
+                                <h6>
+                                    Meeting Requests
+                                </h6>
+                                <h2>
+                                    17
+                                </h2>
+                                <p class="text-danger">
+                                    -3 Since Last Week
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img alt="Logo" class="img-fluid" 
+                                src="images/meeting-request-icon.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-card shadow">
+                            <div>
+                                <h6>
+                                    Firm Listings
+                                </h6>
+                                <h2>
+                                    8
+                                </h2>
+                                <p class="text-warning">
+                                    Same Since Last Week
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img alt="Logo" class="img-fluid" 
+                                src="images/firm-listing-icon.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="stats-card shadow">
+                            <div>
+                                <h6>
+                                    Completed Projects
+                                </h6>
+                                <h2>
+                                    47
+                                </h2>
+                                <p class="text-success">
+                                    +1 Since Last Week
+                                </p>
+                            </div>
+                            <div class="icon">
+                                <img alt="Logo" class="img-fluid" 
+                                src="images/projects-icon.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="chart-card shadow" id="chart-card">
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="projects-column  container shadow p-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="stats-card shadow glassy">
+                                        <div>
+                                            <h6 class="light-text">
+                                                Property Listings
+                                            </h6>
+                                            <h2>
+                                                80
+                                            </h2>
+                                            <p class="text-success">
+                                                +12 Since Last Week
+                                            </p>
+                                        </div>
+                                        <div class="icon">
+                                            <img alt="Logo" class="img-fluid" 
+                                            src="images/listing-icon.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                                        <div class="carousel-indicators">
+                                            <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                                                data-bs-target="#carouselExampleIndicators" type="button">
+                                            </button>
+                                            <button aria-label="Slide 2" data-bs-slide-to="1"
+                                                data-bs-target="#carouselExampleIndicators" type="button">
+                                            </button>
+                                            <button aria-label="Slide 3" data-bs-slide-to="2"
+                                                data-bs-target="#carouselExampleIndicators" type="button">
+                                            </button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img alt="Project Image 1" class="d-block w-100" height="300"
+                                                    src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100"
+                                                    width="400" />
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>
+                                                        Add a New Project
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img alt="Project Image 1" class="d-block w-100" height="300"
+                                                src="images/project-1.png"
+                                                width="400" />
+                                                <div class="glassy carousel-caption d-none d-md-block">
+                                                    <div class="container">
+                                                        <h5>
+                                                            Completed Projects
+                                                        </h5>
+                                                        <p>
+                                                            Demo Project
+                                                        </p>
+                                                        <button class="btn btn-primary">
+                                                            View Project
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img alt="Project Image 3" class="d-block w-100" height="300"
+                                                    src="https://storage.googleapis.com/a1aa/image/ln4oXcmgMm4cL1BARbNoNgjfxbKLK8F9I6drqftUuC3Ne1RnA.jpg"
+                                                    width="400" />
+                                                <div class="carousel-caption d-none d-md-block">
+                                                    <h5>
+                                                        Completed Projects
+                                                    </h5>
+                                                    <p>
+                                                        Demo Project
+                                                    </p>
+                                                    <button class="btn btn-primary">
+                                                        View Project
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" data-bs-slide="prev"
+                                            data-bs-target="#carouselExampleIndicators" type="button">
+                                            <span aria-hidden="true" class="carousel-control-prev-icon">
+                                            </span>
+                                            <span class="visually-hidden">
+                                                Previous
+                                            </span>
+                                        </button>
+                                        <button class="carousel-control-next" data-bs-slide="next"
+                                            data-bs-target="#carouselExampleIndicators" type="button">
+                                            <span aria-hidden="true" class="carousel-control-next-icon">
+                                            </span>
+                                            <span class="visually-hidden">
+                                                Next
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card meeting-requests">
+                            <div class="card-body">
+                                <h5>
+                                    Meeting Requests
+                                </h5>
+                                <div class="request-item">
+                                    <div class="details">
+                                        <img alt="Agency Meta" class="img-fluid" height="50"
+                                            src="https://storage.googleapis.com/a1aa/image/OH5nw0jMHy6jItOi1stUuHwxESC55w9BrAvjGLoE4lRkvO6E.jpg"
+                                            width="50" />
+                                        <div>
+                                            <h6>
+                                                Agency Meta
+                                            </h6>
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <a href="#">
+                                                View Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <button class="btn btn-success">
+                                            Approve
+                                        </button>
+                                        <button class="btn btn-danger">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="request-item">
+                                    <div class="details">
+                                        <img alt="Company Beta" class="img-fluid" height="50"
+                                            src="https://storage.googleapis.com/a1aa/image/uhWezoOuddUhSaaUarkWIYfmKuPJeOT4UtY7AuOnSK3e4rjOB.jpg"
+                                            width="50" />
+                                        <div>
+                                            <h6>
+                                                Company Beta
+                                            </h6>
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <a href="#">
+                                                View Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <button class="btn btn-success">
+                                            Approve
+                                        </button>
+                                        <button class="btn btn-danger">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="request-item">
+                                    <div class="details">
+                                        <img alt="Company Gamma" class="img-fluid" height="50"
+                                            src="https://storage.googleapis.com/a1aa/image/4TfK5C4ad3zRKKXI9Ie3kR4F9buGzYLkKyJgfkPM545U81RnA.jpg"
+                                            width="50" />
+                                        <div>
+                                            <h6>
+                                                Company Gamma
+                                            </h6>
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <a href="#">
+                                                View Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="actions">
+                                        <button class="btn btn-success">
+                                            Approve
+                                        </button>
+                                        <button class="btn btn-danger">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="meetings-today">
+                            <div>
+                                <h5>
+                                    Meetings Today
+                                </h5>
+                                <h2>
+                                    3
+                                </h2>
+                                <button class="btn btn-primary">
+                                    Check Meetings
+                                </button>
+                                <button class="btn btn-secondary">
+                                    Approve Meetings
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="chart-card">
+                            <h5>
+                                Phase Chart
+                            </h5>
+                            <img alt="Phase Chart" class="img-fluid" height="300"
+                                src="https://storage.googleapis.com/a1aa/image/fFv2qJejwIqfyp0YEDlUUteaBPWVSFdjIeV9XXYsxsxGxXHdC.jpg"
+                                width="600" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.highcharts.com/10/highcharts.js"></script>
+    <script>
+        Highcharts.chart('chart-card', {
+        chart: {
+            type: 'area'
+        },
+        accessibility: {
+            description: 'Image description: An area chart compares the nuclear ' +
+                'stockpiles of the USA and the USSR/Russia between 1945 and ' +
+                '2024. The number of nuclear weapons is plotted on the Y-axis ' +
+                'and the years on the X-axis. The chart is interactive, and the ' +
+                'year-on-year stockpile levels can be traced for each country. ' +
+                'The US has a stockpile of 2 nuclear weapons at the dawn of the ' +
+                'nuclear age in 1945. This number has gradually increased to 170 ' +
+                'by 1949 when the USSR enters the arms race with one weapon. At ' +
+                'this point, the US starts to rapidly build its stockpile ' +
+                'culminating in 31,255 warheads by 1966 compared to the USSR’s 8,' +
+                '400. From this peak in 1967, the US stockpile gradually ' +
+                'decreases as the USSR’s stockpile expands. By 1978 the USSR has ' +
+                'closed the nuclear gap at 25,393. The USSR stockpile continues ' +
+                'to grow until it reaches a peak of 40,159 in 1986 compared to ' +
+                'the US arsenal of 24,401. From 1986, the nuclear stockpiles of ' +
+                'both countries start to fall. By 2000, the numbers have fallen ' +
+                'to 10,577 and 12,188 for the US and Russia, respectively. The ' +
+                'decreases continue slowly after plateauing in the 2010s, and in ' +
+                '2024 the US has 3,708 weapons compared to Russia’s 4,380.'
+        },
+        title: {
+            text: 'Dummy Chart'
+        },
+        xAxis: {
+            allowDecimals: false,
+            accessibility: {
+                rangeDescription: 'Dummy Range'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Dummy Data'
+            }
+        },
+        tooltip: {
+            pointFormat: '{series.name} had stockpiled <b>{point.y:,.0f}</b><br/>' +
+                'warheads in {point.x}'
+        },
+        plotOptions: {
+            area: {
+                pointStart: 1940,
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 2,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Dummy 1',
+            data: [
+                null, null, null, null, null, 2, 9, 13, 50, 170, 299, 438, 841,
+                1169, 1703, 2422, 3692, 5543, 7345, 12298, 18638, 22229, 25540,
+                28133, 29463, 31139, 31175, 31255, 29561, 27552, 26008, 25830,
+                26516, 27835, 28537, 27519, 25914, 25542, 24418, 24138, 24104,
+                23208, 22886, 23305, 23459, 23368, 23317, 23575, 23205, 22217,
+                21392, 19008, 13708, 11511, 10979, 10904, 11011, 10903, 10732,
+                10685, 10577, 10526, 10457, 10027, 8570, 8360, 7853, 5709, 5273,
+                5113, 5066, 4897, 4881, 4804, 4717, 4571, 4018, 3822, 3785, 3805,
+                3750, 3708, 3708, 3708, 3708
+            ]
+        }, {
+            name: 'Dummy 2',
+            data: [
+                null, null, null, null, null, null, null, null, null,
+                1, 5, 25, 50, 120, 150, 200, 426, 660, 863, 1048, 1627, 2492,
+                3346, 4259, 5242, 6144, 7091, 8400, 9490, 10671, 11736, 13279,
+                14600, 15878, 17286, 19235, 22165, 24281, 26169, 28258, 30665,
+                32146, 33486, 35130, 36825, 38582, 40159, 38107, 36538, 35078,
+                32980, 29154, 26734, 24403, 21339, 18179, 15942, 15442, 14368,
+                13188, 12188, 11152, 10114, 9076, 8038, 7000, 6643, 6286, 5929,
+                5527, 5215, 4858, 4750, 4650, 4600, 4500, 4490, 4300, 4350, 4330,
+                4310, 4495, 4477, 4489, 4380
+            ]
+        }]
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,313 @@
+body {
+  font-family: 'Poppins','Arial', sans-serif;
+  /* background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%); */
+  color: black;
+}
+.navbar-brand{
+  font-size: small;
+
+}
+
+.sidebar {
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.sidebar .nav-link {
+  color: #000;
+  margin: 10px 0;
+}
+
+.sidebar .nav-link.active {
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+}
+
+.sidebar .section-title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.stats-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #6B6B6B;
+  margin-bottom: 20px;
+}
+
+.stats-card .icon {
+  font-size: 2rem;
+}
+
+.chart-card {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.carousel-item img {
+  border-radius: 20px;
+}
+
+.meeting-requests .request-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #E0E0E0;
+  margin-bottom: 10px;
+}
+
+.meeting-requests .request-item .details {
+  display: flex;
+  align-items: center;
+}
+
+.meeting-requests .request-item .details img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.meeting-requests .request-item .actions button {
+  margin-left: 10px;
+}
+
+.meetings-today {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.meetings-today .bubbles .bubble:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+}
+
+.meetings-today .bubbles .bubble:nth-child(2) {
+  width: 70px;
+  height: 70px;
+  top: 30px;
+  left: 30px;
+}
+
+.meetings-today .bubbles .bubble:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+}
+
+.light-text{
+  font-weight:400;
+  color:#535353 ;
+}
+
+.small-text{
+  font-size: small;
+}
+
+.glassy{
+  backdrop-filter: blur(8px) saturate(10%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.purple-btn{
+  background-color: #683ACC;
+  border: #683ACC;
+}
+
+.purple-btn:hover{
+  background-color: #4a2992;
+  border: #683ACC;
+}
+
+.purple-btn-boundary{
+  background-color:white !important;
+  color: #4a2992 !important;
+  border-color: #683ACC !important;
+}
+
+.purple-btn-boundary:hover{
+  background-color:#683ACC !important;
+  color: white !important;
+  border: #683ACC !important;
+}
+
+.projects-column{
+  background-image: url('images/bg-projects.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .sidebar {
+      height: auto;
+      padding: 10px;
+  }
+
+  .stats-card {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .meetings-today {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+/* FONTS CSS */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
