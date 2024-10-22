@@ -88,7 +88,6 @@ body {
   justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
-  background-color: #E0E0E0;
   margin-bottom: 10px;
 }
 
@@ -148,11 +147,11 @@ body {
 }
 
 .glassy{
-  backdrop-filter: blur(8px) saturate(10%);
+  backdrop-filter: blur(5px) saturate(100%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.11);
+  background-color: rgba(255, 255, 255, 0.329);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.068);
 }
 
 .purple-btn{
@@ -177,6 +176,18 @@ body {
   border: #683ACC !important;
 }
 
+.btn-project{
+  background-color: white;
+  border-color: black !important;
+  color: black;
+}
+
+.btn-project:hover{
+  background-color: rgb(66, 66, 66);
+  border-color: black !important;
+  color: white;
+}
+
 .projects-column{
   background-image: url('images/bg-projects.png');
   background-position: center;
@@ -184,6 +195,11 @@ body {
   border-radius: 20px;
 }
 
+.meeting-requests{
+  background-image: url('images/meeting-bg.png');
+  background-size: cover;
+  background-position: center;
+}
 /* Sidebar default hidden on mobile */
 @media (max-width: 992px) {
   #sidebar {
