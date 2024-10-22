@@ -184,6 +184,17 @@ body {
   border-radius: 20px;
 }
 
+/* Sidebar default hidden on mobile */
+@media (max-width: 992px) {
+  #sidebar {
+      display: none;
+  }
+}
+
+/* Show sidebar when active */
+#sidebar.active {
+  display: block;
+}
 
 
 @media (max-width: 768px) {

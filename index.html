@@ -19,107 +19,67 @@
 </head>
 
 <body>
-    <!-- NAVBAR CODE STARTS HERE -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="px-5 navbar-brand" href="#">JV Dashboard<br><h5>Dashboard</h5></a>
-            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-search">
-                            </i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-bell">
-                            </i>
-                        </a>
-                    </li>
-                </ul>
+   <!-- NAVBAR CODE STARTS HERE -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="px-5 navbar-brand" href="#">JV Dashboard<br><h5>Dashboard</h5></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                data-bs-target="#sidebar" id="sidebarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- NAVBAR CODE ENDS HERE -->
+
+<div class="container-fluid px-5">
+    <div class="row">
+        <!-- SIDE BAR CODE STARTS HERE -->
+        <div class="col-md-2 sidebar shadow sticky-top mt-3 d-none d-lg-block" id="sidebar">
+            <div class="mb-4">
+                <img src="images/Vector.png" class="img-fluid" alt="Logo" width="150" height="150"/>
+            </div>
+            <nav class="nav flex-column">
+                <a class="nav-link p-2" href="#"><img src="images/dashboard-icon.png" class="img-fluid" alt="Dashboard" width="20" height="20"/><span class="ps-3">Dashboard</span></a>
+                <a class="nav-link p-2" href="#"><img src="images/dhalist-icon.png" class="img-fluid" alt="DHA List" width="20" height="20"/><span class="ps-3">DHA List</span></a>
+                <a class="nav-link p-2" href="#"><img src="images/meeting-icon.png" class="img-fluid" alt="Meetings" width="20" height="20"/><span class="ps-3">Meetings</span></a>
+                <a class="nav-link p-2" href="#"><img src="images/firm-icon.png" class="img-fluid" alt="Firms" width="20" height="20"/><span class="ps-3">Firms</span></a>
+                <a class="nav-link p-2" href="#"><img src="images/mou-icon.png" class="img-fluid" alt="MOU" width="20" height="20"/><span class="ps-3">MOU</span></a>
+                <div class="section-title pt-3 pb-3">
+                    <h5 class="light-text">Account Management</h5>
+                </div>
+                <a class="nav-link p-2" href="#"><img src="images/property-user-icon.png" class="img-fluid" alt="Property User" width="20" height="20"/><span class="ps-3">Manage Property User</span></a>
+                <a class="nav-link p-2" href="#"><img src="images/admin-user-icon.png" class="img-fluid" alt="Admin User" width="20" height="20"/><span class="ps-3">Manage Admin User</span></a>
+            </nav>
+            <div class="mt-4">
+                <div class="section-title pt-3 pb-3">
+                    <h5 class="light-text">Need Help?</h5>
+                </div>
+                <div class="text-center">
+                    <img src="images/question-img.png" class="img-fluid" alt="Help Image" width="200" height="200"/>
+                </div>
+                <p class="small-text text-center">Check out our dashboard demo or contact our support team.</p>
+                <div class="d-flex justify-content-around">
+                    <button class="purple-btn btn btn-primary me-2">
+                        <p class="small-text pt-3" style="color: white;">Contact Support</p>
+                    </button>
+                    <button class="purple-btn-boundary btn btn-secondary">
+                        <p class="small-text pt-3">Check Demo</p>
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- NAVBAR CODE ENDS HERE -->
-
-    <div class="container-fluid  px-5">
-        <div class="row">
-            <!-- SIDE BAR CODE STARTS HERE -->
-            <div class="col-md-2 sidebar shadow sticky-top mt-3">
-                <div class="mb-4">
-                    <img alt="Logo" class="img-fluid" height="150"
-                        src="images/Vector.png"
-                        width="150" />
-                </div>
-                <nav class="nav flex-column">
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/dashboard-icon.png" height="20" width="20"/>
-                        <span class="ps-3">Dashboard</span>
-                    </a>
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/dhalist-icon.png" height="20" width="20"/>
-                        <span class="ps-3">DHA List</span>
-                    </a>
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/meeting-icon.png" height="20" width="20"/>
-                        <span class="ps-3">Meetings</span> 
-                    </a>
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/firm-icon.png" height="20" width="20"/>
-                        <span class="ps-3">Firms</span>
-                    </a>
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/mou-icon.png" height="20" width="20"/>
-                        <span class="ps-3">MOU</span>
-                    </a>
-                    <div class="section-title pt-3 pb-3">
-                        <h5 class="light-text">Account Management</h5>
-                    </div>
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/property-user-icon.png" height="20" width="20"/>
-                        <span class="ps-3">Manage Property User</span>
-                    </a>
-                    <a class="nav-link p-2" href="#">
-                        <img alt="Logo" class="img-fluid" 
-                        src="images/admin-user-icon.png" height="20" width="20"/>
-                        <span class="ps-3">Manage Admin User</span>
-                    </a>
-                </nav>
-                <div class="mt-4">
-                    <div class="section-title pt-3 pb-3">
-                        <h5 class="light-text">Need Help?</h5>
-                    </div>
-                    <div class="text-center">
-                        <img alt="Help Image" class="img-fluid" height="200"
-                            src="images/question-img.png"
-                            width="200" />
-                    </div>
-                    <p class="small-text text-center">
-                        Check out our dashboard demo or contact our support team.
-                    </p>
-                    <div class="d-flex justify-content-around">
-                        <button class="purple-btn btn btn-primary me-2">
-                            <p class="small-text pt-3" style="color: white;">Contact Support</p>
-                        </button>
-                        <button class="purple-btn-boundary btn btn-secondary">
-                            <p class="small-text pt-3" >Check Demo</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- SIDE BAR CODE ENDS HERE -->
+        <!-- SIDE BAR CODE ENDS HERE -->
             <div class="col-md-10 content">
                 <div class="row">
                     <div class="col-md-3">
@@ -518,6 +478,12 @@
             ]
         }]
     });
+   
+    document.getElementById("sidebarToggle").addEventListener("click", function() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    });
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
