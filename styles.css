@@ -82,6 +82,14 @@ body {
   border-radius: 20px;
 }
 
+.requests-card{
+  border-radius: 20px;
+  background-image: url('images/meeting-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .meeting-requests .request-item {
   display: flex;
   align-items: center;
@@ -91,9 +99,21 @@ body {
   margin-bottom: 10px;
 }
 
+.meeting-requests {
+ background-color: transparent;
+}
+
 .meeting-requests .request-item .details {
   display: flex;
   align-items: center;
+}
+
+.meeting-requests .request-item h6 {
+  font-size: 14px;
+}
+
+.meeting-requests .request-item p {
+  font-size: 13px;
 }
 
 .meeting-requests .request-item .details img {
@@ -106,35 +126,8 @@ body {
 }
 
 .meetings-today {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
   border-radius: 20px;
-  background-color: #fff;
   color: #000;
-  margin-bottom: 20px;
-}
-
-.meetings-today .bubbles .bubble:nth-child(1) {
-  width: 50px;
-  height: 50px;
-  top: 10px;
-  left: 10px;
-}
-
-.meetings-today .bubbles .bubble:nth-child(2) {
-  width: 70px;
-  height: 70px;
-  top: 30px;
-  left: 30px;
-}
-
-.meetings-today .bubbles .bubble:nth-child(3) {
-  width: 100px;
-  height: 100px;
-  top: 50px;
-  left: 50px;
 }
 
 .light-text{
@@ -180,6 +173,11 @@ body {
   background-color: white;
   border-color: black !important;
   color: black;
+  border-radius: 20px;
+}
+
+.piechart{
+  border-radius: 20px;
 }
 
 .btn-project:hover{
@@ -193,12 +191,6 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-}
-
-.meeting-requests{
-  background-image: url('images/meeting-bg.png');
-  background-size: cover;
-  background-position: center;
 }
 /* Sidebar default hidden on mobile */
 @media (max-width: 992px) {
