@@ -1,11 +1,32 @@
-body {
-  font-family: 'Poppins','Arial', sans-serif;
-  /* background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%); */
-  color: black;
+
+.dashboard-header{
+  background: linear-gradient(185deg, #683ACC, #35a4ff);
+  height: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+.dashboard-content{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 2; 
+    font-family: 'Poppins','Arial', sans-serif;
+    color: black;
 }
 .navbar-brand{
   font-size: small;
+  color: white !important;
+}
 
+.fa-power-off{
+  color: white;
+}
+
+.fa-bell{
+  color: white;
 }
 
 .sidebar {
@@ -202,6 +223,10 @@ body {
 /* Show sidebar when active */
 #sidebar.active {
   display: block;
+}
+
+.details-link{
+  color: #683ACC !important;
 }
 
 

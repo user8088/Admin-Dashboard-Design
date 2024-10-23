@@ -22,349 +22,351 @@
 
 <body>
     <!-- NAVBAR CODE STARTS HERE -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="px-5 navbar-brand" href="#">JV Dashboard<br>
-                <h5>Dashboard</h5>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#sidebar" id="sidebarToggle">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- NAVBAR CODE ENDS HERE -->
-
-    <div class="container-fluid px-0 px-md-5 px-lg-5">
-        <div class="row">
-            <!-- SIDE BAR CODE STARTS HERE -->
-            <div class="col-md-2 sidebar shadow sticky-top mt-3 d-none d-lg-block" id="sidebar">
-                <div class="mb-4">
-                    <img src="images/Vector.png" class="img-fluid" alt="Logo" width="150" height="150" />
-                </div>
-                <nav class="nav flex-column">
-                    <a class="nav-link p-2" href="#"><img src="images/dashboard-icon.png" class="img-fluid"
-                            alt="Dashboard" width="20" height="20" /><span class="ps-3">Dashboard</span></a>
-                    <a class="nav-link p-2" href="#"><img src="images/dhalist-icon.png" class="img-fluid" alt="DHA List"
-                            width="20" height="20" /><span class="ps-3">DHA List</span></a>
-                    <a class="nav-link p-2" href="#"><img src="images/meeting-icon.png" class="img-fluid" alt="Meetings"
-                            width="20" height="20" /><span class="ps-3">Meetings</span></a>
-                    <a class="nav-link p-2" href="#"><img src="images/firm-icon.png" class="img-fluid" alt="Firms"
-                            width="20" height="20" /><span class="ps-3">Firms</span></a>
-                    <a class="nav-link p-2" href="#"><img src="images/mou-icon.png" class="img-fluid" alt="MOU"
-                            width="20" height="20" /><span class="ps-3">MOU</span></a>
-                    <div class="section-title pt-3 pb-3">
-                        <h5 class="light-text">Account Management</h5>
-                    </div>
-                    <a class="nav-link p-2" href="#"><img src="images/property-user-icon.png" class="img-fluid"
-                            alt="Property User" width="20" height="20" />
-                        <span class="ps-3">Manage Property User</span>
+    <div class="dashboard-header">
+        <div class="dashboard-content">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="px-5 navbar-brand" href="#">JV Dashboard<br>
+                        <h5>Dashboard</h5>
                     </a>
-                    <a class="nav-link p-2" href="#"><img src="images/admin-user-icon.png" class="img-fluid"
-                            alt="Admin User" width="20" height="20" />
-                        <span class="ps-3">Manage Admin User</span>
-                    </a>
-                </nav>
-                <div class="mt-4">
-                    <div class="section-title pt-3 pb-3">
-                        <h5 class="light-text">Need Help?</h5>
-                    </div>
-                    <div class="text-center">
-                        <img src="images/question-img.png" class="img-fluid" alt="Help Image" width="200"
-                            height="200" />
-                    </div>
-                    <p class="small-text text-center">Check out our dashboard demo or contact our support team.</p>
-                    <div class="d-flex justify-content-around">
-                        <button class="purple-btn btn btn-primary me-2">
-                            <p class="small-text pt-3" style="color: white;">Contact Support</p>
-                        </button>
-                        <button class="purple-btn-boundary btn btn-secondary">
-                            <p class="small-text pt-3">Check Demo</p>
-                        </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#sidebar" id="sidebarToggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto px-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-power-off"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <!-- SIDE BAR CODE ENDS HERE -->
-
-            <!-- DASHBOARD STATS CARDS START HERE -->
-            <div class="col-md-10 content">
+            </nav>
+            <!-- NAVBAR CODE ENDS HERE -->
+        
+            <div class="container-fluid px-0 px-md-5 px-lg-5">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="stats-card shadow">
-                            <div>
-                                <h6 class="light-text">Property Listings</h6>
-                                <h2>80</h2>
-                                <p class="text-success">+12 Since Last Week</p>
+                    <!-- SIDE BAR CODE STARTS HERE -->
+                    <div class="col-md-2 sidebar shadow sticky-top mt-3 d-none d-lg-block" id="sidebar">
+                        <div class="mb-4">
+                            <img src="images/Vector.png" class="img-fluid" alt="Logo" width="150" height="150" />
+                        </div>
+                        <nav class="nav flex-column">
+                            <a class="nav-link p-2" href="#"><img src="images/dashboard-icon.png" class="img-fluid"
+                                    alt="Dashboard" width="20" height="20" /><span class="ps-3">Dashboard</span></a>
+                            <a class="nav-link p-2" href="#"><img src="images/dhalist-icon.png" class="img-fluid" alt="DHA List"
+                                    width="20" height="20" /><span class="ps-3">DHA List</span></a>
+                            <a class="nav-link p-2" href="#"><img src="images/meeting-icon.png" class="img-fluid" alt="Meetings"
+                                    width="20" height="20" /><span class="ps-3">Meetings</span></a>
+                            <a class="nav-link p-2" href="#"><img src="images/firm-icon.png" class="img-fluid" alt="Firms"
+                                    width="20" height="20" /><span class="ps-3">Firms</span></a>
+                            <a class="nav-link p-2" href="#"><img src="images/mou-icon.png" class="img-fluid" alt="MOU"
+                                    width="20" height="20" /><span class="ps-3">MOU</span></a>
+                            <div class="section-title pt-3 pb-3">
+                                <h5 class="light-text">Account Management</h5>
                             </div>
-                            <div class="icon">
-                                <img alt="Logo" class="img-fluid" src="images/listing-icon.png" />
+                            <a class="nav-link p-2" href="#"><img src="images/property-user-icon.png" class="img-fluid"
+                                    alt="Property User" width="20" height="20" />
+                                <span class="ps-3">Manage Property User</span>
+                            </a>
+                            <a class="nav-link p-2" href="#"><img src="images/admin-user-icon.png" class="img-fluid"
+                                    alt="Admin User" width="20" height="20" />
+                                <span class="ps-3">Manage Admin User</span>
+                            </a>
+                        </nav>
+                        <div class="mt-4">
+                            <div class="section-title pt-3 pb-3">
+                                <h5 class="light-text">Need Help?</h5>
+                            </div>
+                            <div class="text-center">
+                                <img src="images/question-img.png" class="img-fluid" alt="Help Image" width="200"
+                                    height="200" />
+                            </div>
+                            <p class="small-text text-center">Check out our dashboard demo or contact our support team.</p>
+                            <div class="d-flex justify-content-around">
+                                <button class="purple-btn btn btn-primary me-2">
+                                    <p class="small-text pt-3" style="color: white;">Contact Support</p>
+                                </button>
+                                <button class="purple-btn-boundary btn btn-secondary">
+                                    <p class="small-text pt-3">Check Demo</p>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="stats-card shadow">
-                            <div>
-                                <h6>Meeting Requests</h6>
-                                <h2>17</h2>
-                                <p class="text-danger">-3 Since Last Week</p>
+                    <!-- SIDE BAR CODE ENDS HERE -->
+        
+                    <!-- DASHBOARD STATS CARDS START HERE -->
+                    <div class="col-md-10 content">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="stats-card shadow">
+                                    <div>
+                                        <h6 class="light-text">Property Listings</h6>
+                                        <h2>80</h2>
+                                        <p class="text-success">+12 Since Last Week</p>
+                                    </div>
+                                    <div class="icon">
+                                        <img alt="Logo" class="img-fluid" src="images/listing-icon.png" />
+                                    </div>
+                                </div>
                             </div>
-                            <div class="icon">
-                                <img alt="Logo" class="img-fluid" src="images/meeting-request-icon.png" />
+                            <div class="col-md-3">
+                                <div class="stats-card shadow">
+                                    <div>
+                                        <h6>Meeting Requests</h6>
+                                        <h2>17</h2>
+                                        <p class="text-danger">-3 Since Last Week</p>
+                                    </div>
+                                    <div class="icon">
+                                        <img alt="Logo" class="img-fluid" src="images/meeting-request-icon.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stats-card shadow">
+                                    <div>
+                                        <h6>Firm Listings</h6>
+                                        <h2>8</h2>
+                                        <p class="text-warning">Same Since Last Week</p>
+                                    </div>
+                                    <div class="icon">
+                                        <img alt="Logo" class="img-fluid" src="images/firm-listing-icon.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="stats-card shadow">
+                                    <div>
+                                        <h6>Completed Projects</h6>
+                                        <h2>47</h2>
+                                        <p class="text-success">+1 Since Last Week</p>
+                                    </div>
+                                    <div class="icon">
+                                        <img alt="Logo" class="img-fluid" src="images/projects-icon.png" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="stats-card shadow">
-                            <div>
-                                <h6>Firm Listings</h6>
-                                <h2>8</h2>
-                                <p class="text-warning">Same Since Last Week</p>
+                        <!-- DASHBOARD STATS CARD END HERE -->
+        
+                        <!-- DASHBOARD PROJECT CAROUSEL CARD STARTS HERE -->
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="chart-card shadow" id="chart-card"></div>
                             </div>
-                            <div class="icon">
-                                <img alt="Logo" class="img-fluid" src="images/firm-listing-icon.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="stats-card shadow">
-                            <div>
-                                <h6>Completed Projects</h6>
-                                <h2>47</h2>
-                                <p class="text-success">+1 Since Last Week</p>
-                            </div>
-                            <div class="icon">
-                                <img alt="Logo" class="img-fluid" src="images/projects-icon.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- DASHBOARD STATS CARD END HERE -->
-
-                <!-- DASHBOARD PROJECT CAROUSEL CARD STARTS HERE -->
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="chart-card shadow" id="chart-card"></div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="projects-column  container shadow py-5">
-                            <div class="row py-4">
-                                <div class="col-lg-6">
-                                    <div class="stats-card shadow glassy">
-                                        <div>
-                                            <h6 class="light-text"> Add a new project</h6>
+                            <div class="col-lg-5">
+                                <div class="projects-column  container shadow py-5">
+                                    <div class="row py-4">
+                                        <div class="col-lg-6">
+                                            <div class="stats-card shadow glassy">
+                                                <div>
+                                                    <h6 class="light-text"> Add a new project</h6>
+                                                </div>
+                                                <div class="icon">
+                                                    <img alt="Logo" class="img-fluid" src="images/plus-icon.png" />
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="icon">
-                                            <img alt="Logo" class="img-fluid" src="images/plus-icon.png" />
+                                        <div class="col-lg-6">
+                                            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                                                <div class="carousel-indicators">
+                                                    <button aria-current="true" aria-label="Slide 1" class="active"
+                                                        data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
+                                                        type="button">
+                                                    </button>
+                                                    <button aria-label="Slide 2" data-bs-slide-to="1"
+                                                        data-bs-target="#carouselExampleIndicators" type="button">
+                                                    </button>
+                                                    <button aria-label="Slide 3" data-bs-slide-to="2"
+                                                        data-bs-target="#carouselExampleIndicators" type="button">
+                                                    </button>
+                                                </div>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img alt="Project Image 1" class="d-block w-100" height="300"
+                                                            src="images/project-1.png" width="400" />
+                                                        <div class="glassy carousel-caption">
+                                                            <div class="container">
+                                                                <h5> Completed Projects</h5>
+                                                                <p>
+                                                                    Demo Project
+                                                                </p>
+                                                                <button class="btn-project btn btn-primary">
+                                                                    View Project
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img alt="Project Image 1" class="d-block w-100" height="300"
+                                                            src="images/project-2.png" width="400" />
+                                                        <div class="glassy carousel-caption">
+                                                            <div class="container">
+                                                                <h5>
+                                                                    Completed Projects
+                                                                </h5>
+                                                                <p>
+                                                                    Demo Project
+                                                                </p>
+                                                                <button class="btn-project btn btn-primary">
+                                                                    View Project
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img alt="Project Image 3" class="d-block w-100" height="300"
+                                                            src="images/project-3.png" width="400" />
+                                                        <div class="glassy carousel-caption">
+                                                            <div class="container">
+                                                                <h5>
+                                                                    Completed Projects
+                                                                </h5>
+                                                                <p>
+                                                                    Demo Project
+                                                                </p>
+                                                                <button class="btn-project btn btn-primary">
+                                                                    <span>View Project</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" data-bs-slide="prev"
+                                                    data-bs-target="#carouselExampleIndicators" type="button">
+                                                    <span aria-hidden="true" class="carousel-control-prev-icon">
+                                                    </span>
+                                                    <span class="visually-hidden">
+                                                        Previous
+                                                    </span>
+                                                </button>
+                                                <button class="carousel-control-next" data-bs-slide="next"
+                                                    data-bs-target="#carouselExampleIndicators" type="button">
+                                                    <span aria-hidden="true" class="carousel-control-next-icon">
+                                                    </span>
+                                                    <span class="visually-hidden">
+                                                        Next
+                                                    </span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-                                        <div class="carousel-indicators">
-                                            <button aria-current="true" aria-label="Slide 1" class="active"
-                                                data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
-                                                type="button">
-                                            </button>
-                                            <button aria-label="Slide 2" data-bs-slide-to="1"
-                                                data-bs-target="#carouselExampleIndicators" type="button">
-                                            </button>
-                                            <button aria-label="Slide 3" data-bs-slide-to="2"
-                                                data-bs-target="#carouselExampleIndicators" type="button">
-                                            </button>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img alt="Project Image 1" class="d-block w-100" height="300"
-                                                    src="images/project-1.png" width="400" />
-                                                <div class="glassy carousel-caption">
-                                                    <div class="container">
-                                                        <h5> Completed Projects</h5>
-                                                        <p>
-                                                            Demo Project
-                                                        </p>
-                                                        <button class="btn-project btn btn-primary">
-                                                            View Project
+                            </div>
+                        </div>
+                        <!-- DASHBOARD PROJECT CAROUSEL CARD ENDS HERE -->
+        
+                        <!-- MEETING REQUESTS CARD STARTS HERE -->
+                        <div class="row ">
+                            <div class="col-lg-7 border-0 shadow requests-card">
+                                <div class="row g-1">
+                                    <div class="col-lg-8">
+                                        <div class="card meeting-requests border-0">
+                                            <div class="card-body">
+                                                <h5>
+                                                    Meeting Requests
+                                                </h5>
+                                                <div class="glassy shadow request-item">
+                                                    <div class="details">
+                                                        <img alt="Agency Meta" class="img-fluid" height="50"
+                                                            src="https://storage.googleapis.com/a1aa/image/OH5nw0jMHy6jItOi1stUuHwxESC55w9BrAvjGLoE4lRkvO6E.jpg"
+                                                            width="60" />
+                                                        <div>
+                                                            <h6 class="meetings-request-heading">
+                                                                Agency Meta
+                                                            </h6>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <a href="#" class="details-link">
+                                                                <p>View Details</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn-project btn btn-success">
+                                                            Approve
+                                                        </button>
+                                                        <button class="btn-project btn btn-danger mt-2 mt-lg-0 mt-md-0">
+                                                            Cancel
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="glassy shadow request-item">
+                                                    <div class="details">
+                                                        <img alt="Company Beta" class="img-fluid" height="50"
+                                                            src="https://storage.googleapis.com/a1aa/image/uhWezoOuddUhSaaUarkWIYfmKuPJeOT4UtY7AuOnSK3e4rjOB.jpg"
+                                                            width="60" />
+                                                        <div>
+                                                            <h6>
+                                                                Company Beta
+                                                            </h6>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <a href="#" class="details-link">
+                                                                <p>View Details</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn-project btn btn-success">
+                                                            Approve
+                                                        </button>
+                                                        <button class="btn-project btn btn-danger mt-2 mt-lg-0 mt-md-0">
+                                                            Cancel
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="glassy shadow request-item">
+                                                    <div class="details">
+                                                        <img alt="Company Gamma" class="img-fluid" height="50"
+                                                            src="https://storage.googleapis.com/a1aa/image/4TfK5C4ad3zRKKXI9Ie3kR4F9buGzYLkKyJgfkPM545U81RnA.jpg"
+                                                            width="60" />
+                                                        <div>
+                                                            <h6>
+                                                                Company Gamma
+                                                            </h6>
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <a href="#" class="details-link">
+                                                                <p>View Details</p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions">
+                                                        <button class="btn-project btn btn-success">
+                                                            Approve
+                                                        </button>
+                                                        <button class="btn-project btn btn-danger mt-2 mt-lg-0 mt-md-0">
+                                                            Cancel
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="carousel-item">
-                                                <img alt="Project Image 1" class="d-block w-100" height="300"
-                                                    src="images/project-2.png" width="400" />
-                                                <div class="glassy carousel-caption">
-                                                    <div class="container">
-                                                        <h5>
-                                                            Completed Projects
-                                                        </h5>
-                                                        <p>
-                                                            Demo Project
-                                                        </p>
-                                                        <button class="btn-project btn btn-primary">
-                                                            View Project
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img alt="Project Image 3" class="d-block w-100" height="300"
-                                                    src="images/project-3.png" width="400" />
-                                                <div class="glassy carousel-caption">
-                                                    <div class="container">
-                                                        <h5>
-                                                            Completed Projects
-                                                        </h5>
-                                                        <p>
-                                                            Demo Project
-                                                        </p>
-                                                        <button class="btn-project btn btn-primary">
-                                                            <span>View Project</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
-                                        <button class="carousel-control-prev" data-bs-slide="prev"
-                                            data-bs-target="#carouselExampleIndicators" type="button">
-                                            <span aria-hidden="true" class="carousel-control-prev-icon">
-                                            </span>
-                                            <span class="visually-hidden">
-                                                Previous
-                                            </span>
-                                        </button>
-                                        <button class="carousel-control-next" data-bs-slide="next"
-                                            data-bs-target="#carouselExampleIndicators" type="button">
-                                            <span aria-hidden="true" class="carousel-control-next-icon">
-                                            </span>
-                                            <span class="visually-hidden">
-                                                Next
-                                            </span>
-                                        </button>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- DASHBOARD PROJECT CAROUSEL CARD ENDS HERE -->
-
-                <!-- MEETING REQUESTS CARD STARTS HERE -->
-                <div class="row ">
-                    <div class="col-lg-7 border-0 shadow requests-card">
-                        <div class="row g-1">
-                            <div class="col-lg-8">
-                                <div class="card meeting-requests border-0">
-                                    <div class="card-body">
-                                        <h5>
-                                            Meeting Requests
-                                        </h5>
-                                        <div class="glassy shadow request-item">
-                                            <div class="details">
-                                                <img alt="Agency Meta" class="img-fluid" height="50"
-                                                    src="https://storage.googleapis.com/a1aa/image/OH5nw0jMHy6jItOi1stUuHwxESC55w9BrAvjGLoE4lRkvO6E.jpg"
-                                                    width="50" />
-                                                <div>
-                                                    <h6 class="meetings-request-heading">
-                                                        Agency Meta
-                                                    </h6>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet.
-                                                    </p>
-                                                    <a href="#">
-                                                        View Details
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="actions">
-                                                <button class="btn-project btn btn-success">
-                                                    Approve
-                                                </button>
-                                                <button class="btn-project btn btn-danger mt-2 mt-lg-0 mt-md-0">
-                                                    Cancel
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="glassy shadow request-item">
-                                            <div class="details">
-                                                <img alt="Company Beta" class="img-fluid" height="50"
-                                                    src="https://storage.googleapis.com/a1aa/image/uhWezoOuddUhSaaUarkWIYfmKuPJeOT4UtY7AuOnSK3e4rjOB.jpg"
-                                                    width="50" />
-                                                <div>
-                                                    <h6>
-                                                        Company Beta
-                                                    </h6>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet.
-                                                    </p>
-                                                    <a href="#">
-                                                        View Details
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="actions">
-                                                <button class="btn-project btn btn-success">
-                                                    Approve
-                                                </button>
-                                                <button class="btn-project btn btn-danger mt-2 mt-lg-0 mt-md-0">
-                                                    Cancel
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="glassy shadow request-item">
-                                            <div class="details">
-                                                <img alt="Company Gamma" class="img-fluid" height="50"
-                                                    src="https://storage.googleapis.com/a1aa/image/4TfK5C4ad3zRKKXI9Ie3kR4F9buGzYLkKyJgfkPM545U81RnA.jpg"
-                                                    width="50" />
-                                                <div>
-                                                    <h6>
-                                                        Company Gamma
-                                                    </h6>
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet.
-                                                    </p>
-                                                    <a href="#">
-                                                        View Details
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="actions">
-                                                <button class="btn-project btn btn-success">
-                                                    Approve
-                                                </button>
-                                                <button class="btn-project btn btn-danger mt-2 mt-lg-0 mt-md-0">
-                                                    Cancel
-                                                </button>
+                                    <div class="col-lg-4 ">
+                                        <div class="container my-5 glassy shadow">
+                                            <h5 class="my-5 text-center">Meetings Today</h5>
+                                            <h1 class="my-5 text-center">3</h1>
+                                            <div class="btn-container text-center mb-5">
+                                                <button class="btn-project btn btn-primary mb-3">Check Meetings</button>
+                                                <button class="btn-project btn btn-secondary mb-3">Approve Meetings</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 ">
-                                <div class="container my-5 glassy shadow">
-                                    <h5 class="my-5 text-center">Meetings Today</h5>
-                                    <h1 class="my-5 text-center">3</h1>
-                                    <div class="btn-container text-center mb-4">
-                                        <button class="btn-project btn btn-primary mb-3">Check Meetings</button>
-                                        <button class="btn-project btn btn-secondary mb-3">Approve Meetings</button>
-                                    </div>
-                                </div>
+                             <!-- MEETING REQUESTS CARD ENDS HERE -->
+                              <!-- 3D CHART CARD STARTS HERE -->
+                            <div class="col-lg-5 pt-5 pt-lg-0">
+                                <div class="shadow piechart py-5"  id="3dchart"></div>
                             </div>
-                        </div>
-                    </div>
-                     <!-- MEETING REQUESTS CARD ENDS HERE -->
-                      <!-- 3D CHART CARD STARTS HERE -->
-                    <div class="col-lg-5 pt-5 pt-lg-0">
-                        <div class="shadow piechart pt-0 pt-lg-5"  id="3dchart">
-
                         </div>
                     </div>
                 </div>
