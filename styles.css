@@ -21,6 +21,13 @@
   color: white !important;
 }
 
+/* .navbar-toggler{
+  position: fixed; 
+  top: 40px; 
+  left: 10px; 
+  z-index: 10000;
+} */
+
 .fa-power-off{
   color: white;
 }
@@ -35,6 +42,7 @@
   height: 100vh;
   padding: 20px;
   border-radius: 20px;
+  scrollbar-width: 200px;
 }
 
 .sidebar .nav-link {
@@ -86,6 +94,7 @@
   color: #6B6B6B;
   margin-bottom: 20px;
 }
+
 
 .stats-card .icon {
   font-size: 2rem;

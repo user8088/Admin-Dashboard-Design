@@ -24,7 +24,7 @@
     <!-- NAVBAR CODE STARTS HERE -->
     <div class="dashboard-header">
         <div class="dashboard-content">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="px-5 navbar-brand" href="#">JV Dashboard<br>
                         <h5>Dashboard</h5>
@@ -56,7 +56,7 @@
             <div class="container-fluid px-0 px-md-5 px-lg-5">
                 <div class="row">
                     <!-- SIDE BAR CODE STARTS HERE -->
-                    <div class="col-md-2 sidebar shadow sticky-top mt-3 d-none d-lg-block" id="sidebar">
+                    <div class="col-md-2 sidebar sticky-top shadow mt-3 d-lg-block" id="sidebar">
                         <div class="mb-4">
                             <img src="images/Vector.png" class="img-fluid" alt="Logo" width="150" height="150" />
                         </div>
@@ -167,11 +167,11 @@
                                 <div class="projects-column  container shadow py-5">
                                     <div class="row py-4">
                                         <div class="col-lg-6">
-                                            <div class="stats-card shadow glassy">
+                                            <div class="stats-card shadow glassy" id="addproject-card">
                                                 <div>
                                                     <h6 class="light-text"> Add a new project</h6>
                                                 </div>
-                                                <div class="icon">
+                                                <div class="icon" id="addproject">
                                                     <img alt="Logo" class="img-fluid" src="images/plus-icon.png" />
                                                 </div>
                                             </div>
@@ -384,7 +384,15 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
     <script>
+           document.getElementById("sidebarToggle").addEventListener("click", function () {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        });
         Highcharts.chart('chart-card', {
             chart: {
                 type: 'area'
@@ -472,10 +480,6 @@
             }]
         });
 
-        document.getElementById("sidebarToggle").addEventListener("click", function () {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("active");
-        });
         Highcharts.chart('3dchart', {
         chart: {
             type: 'pie',
@@ -525,6 +529,23 @@
                 ['Others', 30]
             ]
         }]
+    });
+    </script>
+    <script>
+        $('#addproject').click(function(){
+        var statsCard = $('#addproject-card');
+        // Check the current height and toggle between full height and original height
+        if (statsCard.height() == 0 || statsCard.height() == 'auto') {
+            // Expand the card to full height (100%)
+            statsCard.animate({
+                height: "100%"
+            }, 500, "swing");
+        } else {
+            // Collapse the card to its original height (let's assume it's 0 or a specific value)
+            statsCard.animate({
+                height: "0",
+            }, 500, "swing");
+        }
     });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
