@@ -1,5 +1,5 @@
 /* MAIN CONTENT CSS */
-.dashboard-header {
+.dashboard-wrapper {
   background: linear-gradient(185deg, #683ACC, #35a4ff);
   height: 350px;
   position: relative;
@@ -48,7 +48,7 @@
   height: 100vh;
   padding: 20px;
   border-radius: 20px;
-  scrollbar-width: 200px;
+  overflow-y: auto;
 }
 
 .sidebar .nav-link {
