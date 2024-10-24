@@ -64,6 +64,10 @@
   font-weight: bold;
 }
 
+.fa-bars{
+  color: white;
+}
+
 .content {
   padding: 20px;
 }
@@ -94,6 +98,59 @@
   color: #6B6B6B;
   margin-bottom: 20px;
 }
+
+.addproject-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #6B6B6B;
+  margin-bottom: 20px;
+}
+
+.sidebar-mobile {
+    position: fixed; /* Make the sidebar fixed */
+    top: 70; /* Align to the top of the screen */
+    width: 200px; /* Set the width of the sidebar */
+    /* Full height */
+    background-color: white; /* Background color for the sidebar */
+    z-index: 100; /* Ensure it's above other content */
+    box-shadow: -3px 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    color: #000;
+   height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto; 
+}
+
+.sidebar-mobile .nav-link {
+  color: #000;
+  margin: 10px 0;
+  font-size: small;
+}
+.small-text-mobile{
+  font-size: smaller !important;
+}
+
+.sidebar-mobile .nav-link.active {
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.sidebar-mobile .nav-link i {
+  margin-right: 10px;
+}
+
+.sidebar-mobile .section-title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+
 
 
 .stats-card .icon {

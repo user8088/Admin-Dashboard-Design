@@ -26,29 +26,86 @@
         <div class="dashboard-content">
             <nav class="navbar sticky-top navbar-expand-lg navbar-light">
                 <div class="container-fluid">
+                    <i class="fa fa-bars" aria-hidden="true" id="sidebar-toggle" class=" d-lg-none d-md-block d-sm-block">
+                    </i>
                     <a class="px-5 navbar-brand" href="#">JV Dashboard<br>
                         <h5>Dashboard</h5>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav"
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item d-block d-md-none d-sm-none">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item d-block d-md-none d-sm-none">
+                            <a class="nav-link" href="#"><i class="fas fa-power-off"></i></a>
+                        </li>
+                     </ul>
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#sidebar" id="sidebarToggle">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto px-5">
-                            <form class="d-flex" role="search">
-                                <div class="input-group">
-                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
-                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                </div>
-                            </form>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fas fa-power-off"></i></a>
-                            </li>
-                        </ul>
+                    </button> -->
+                    <!-- Toggler Button for Mobile Sidebar -->
+                    
+                    
+                    <ul class="navbar-nav ms-auto px-5">
+                        <form class="d-flex d-none d-lg-block me-3" role="search">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            </div>
+                        </form>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="#"><i class="fas fa-power-off"></i></a>
+                        </li>
+                     </ul>
+                </div>
+            </nav>
+            <!-- Sidebar for Mobile -->
+            <nav class="navbar  navbar-expand-lg navbar-light">
+                <div class="col-md-2 sidebar-mobile shadow mt-3 d-lg-none d-md-block d-sm-block" id="sidebar-mobile" style="display: none;">
+                    <div class="mb-3">
+                        <img src="images/Vector.png" class="img-fluid" alt="Logo" width="150" height="150" />
                     </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link p-1" href="#"><img src="images/dashboard-icon.png" class="img-fluid"
+                                alt="Dashboard" width="20" height="20" /><span class="ps-3">Dashboard</span></a>
+                        <a class="nav-link p-1" href="#"><img src="images/dhalist-icon.png" class="img-fluid" alt="DHA List"
+                                width="20" height="20" /><span class="ps-3">DHA List</span></a>
+                        <a class="nav-link p-1" href="#"><img src="images/meeting-icon.png" class="img-fluid" alt="Meetings"
+                                width="20" height="20" /><span class="ps-3">Meetings</span></a>
+                        <a class="nav-link p-1" href="#"><img src="images/firm-icon.png" class="img-fluid" alt="Firms"
+                                width="20" height="20" /><span class="ps-3">Firms</span></a>
+                        <a class="nav-link p-1" href="#"><img src="images/mou-icon.png" class="img-fluid" alt="MOU"
+                                width="20" height="20" /><span class="ps-3">MOU</span></a>
+                        <div class="section-title pb-3">
+                            <h5 class="light-text">Account Management</h5>
+                        </div>
+                        <a class="nav-link p-1" href="#"><img src="images/property-user-icon.png" class="img-fluid"
+                                alt="Property User" width="20" height="20" />
+                            <span class="ps-2">Manage Property User</span>
+                        </a>
+                        <a class="nav-link p-1" href="#"><img src="images/admin-user-icon.png" class="img-fluid"
+                                alt="Admin User" width="20" height="20" />
+                            <span class="ps-2">Manage Admin User</span>
+                        </a>
+                    </nav>
+                        <div class="section-title pb-2">
+                            <h5 class="light-text">Need Help?</h5>
+                        </div>
+                        <div class="text-center">
+                            <img src="images/question-img.png" class="img-fluid" alt="Help Image" width="100" height="100" />
+                        </div>
+                        <p class="small-text-mobile text-center">Check out our dashboard demo or contact our support team.</p>
+                        <div class="d-flex justify-content-around">
+                            <button class="purple-btn btn btn-primary me-2">
+                                <p class="small-text-mobile " style="color: white;">Contact Support</p>
+                            </button>
+                            <button class="purple-btn-boundary btn btn-secondary">
+                                <p class="small-text-mobile ">Check Demo</p>
+                            </button>
+                        </div>
                 </div>
             </nav>
             <!-- NAVBAR CODE ENDS HERE -->
@@ -56,7 +113,7 @@
             <div class="container-fluid px-0 px-md-5 px-lg-5">
                 <div class="row">
                     <!-- SIDE BAR CODE STARTS HERE -->
-                    <div class="col-md-2 sidebar sticky-top shadow mt-3 d-lg-block" id="sidebar">
+                    <div class="col-md-2 sidebar  sticky-top shadow mt-3 d-none d-lg-block" id="sidebar-desktop">
                         <div class="mb-4">
                             <img src="images/Vector.png" class="img-fluid" alt="Logo" width="150" height="150" />
                         </div>
@@ -167,7 +224,7 @@
                                 <div class="projects-column  container shadow py-5">
                                     <div class="row py-4">
                                         <div class="col-lg-6">
-                                            <div class="stats-card shadow glassy" id="addproject-card">
+                                            <div class="addproject-card shadow glassy" id="addproject-card">
                                                 <div>
                                                     <h6 class="light-text"> Add a new project</h6>
                                                 </div>
@@ -389,9 +446,23 @@
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
     <script>
-           document.getElementById("sidebarToggle").addEventListener("click", function () {
-            var sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("active");
+        //    document.getElementById("sidebarToggle").addEventListener("click", function () {
+        //     var sidebar = document.getElementById("sidebar");
+        //     sidebar.classList.toggle("active");
+        // });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarMobile = document.getElementById('sidebar-mobile');
+            const sidebarToggle = document.getElementById('sidebar-toggle');
+
+            // Toggle sidebar visibility when the button is clicked
+            sidebarToggle.addEventListener('click', function() {
+                if (sidebarMobile.style.display === 'none' || sidebarMobile.style.display === '') {
+                    sidebarMobile.style.display = 'block'; // Show sidebar
+                } else {
+                    sidebarMobile.style.display = 'none'; // Hide sidebar
+                }
+            });
         });
         Highcharts.chart('chart-card', {
             chart: {
